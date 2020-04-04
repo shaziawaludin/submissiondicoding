@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body p{
+    font-size: 18px;
+}
+nav a{
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-color:#0facd4;
+    padding: 18px;
+    top: 0;
+    position: sticky;
+z-index: 999;
+}
+
+nav ul{
+    float: right;
+    margin-top: 0;
+}
+nav li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+    
+}
+
+.kiri{
+    padding : 20px;
+    margin-top: -100px;
+    width: 50%;
+}
+
+div.kiri h1{
+    font-size:62px ;
+}
+div.kiri p{
+    font-size: 20px;
+}
+.jumbotron{
+    height: 600px;
+    width: 100%;
+    background: url('Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    
+   
+}
+
+.heading-head{
+   width: 80%;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   align-items: center;
+}
+
+.container h2, aside,footer,.card2{
+    text-align: center;
+}
+#mainbox{
+    width: 100%;
+    margin-bottom: 100px;
+    overflow: auto;
+}
+#content{
+    float: left;
+    width: 60%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+
+.container h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.ccontainer{
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+        align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card{
+    box-shadow: -6px -6px 20px rgb(255, 255, 255,.1),
+                6px 6px 6px rgba(0,0 ,0 , .1);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.card1{
+    max-width: 320px;
+    min-height: 300px;
+    padding: 30px;
+}
+
+.card2{
+    flex-basis: 20%;
+    height: 100px;
+}
+
+aside{
+    float: left;
+    width: 25%;
+    padding: 30px;
+    
+}
+
+aside.card{
+    box-shadow: 4px 6px 20px  #00f7ff;
+}
+.ccontainer > div.card:hover{
+    box-shadow: inset -6px -6px 20px rgb(255, 255, 255,.1),
+                inset 6px 6px 6px rgba(0,0 ,0 , .1);
+    border-radius: 25px;
+}
+
+img{
+    border-radius: 50%;
+}
+th{
+    text-align: end;
+}
+
+td{
+    text-align: start;
+}
+
+footer{
+    padding: 20px;
+   
+}
+
+.hccontainer{
+    position: relative;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hc{
+    width: 100%;
+    height: 600px;
+}
+.hcbx{
+    position: absolute;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0);
+    text-align: justify;
+}
+
+.hccontainer .hcbx.active{
+    transform: scale(1);
+    visibility: visible;
+    transition-delay: .1s;
+    opacity: 1;
+    
+}
+
+@media screen and (max-width: 992px){
+    #content, aside{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+}
